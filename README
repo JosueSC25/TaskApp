@@ -1,0 +1,37 @@
+                                    TaskApp - Aplicación de Gestión de Tareas
+
+Esta es una aplicación móvil para gestionar tareas, creada con Ionic Framework y Angular. Permite a los usuarios crear, ver, editar y eliminar tareas, así como marcar tareas como completadas. Además, las tareas se guardan en el almacenamiento local del dispositivo.
+
+Características
+    *Crear tareas: Añadir nuevas tareas con título y descripción.
+    *Ver tareas: Mostrar todas las tareas en una lista con su estado (pendiente/completada).
+    *Editar tareas: Cambiar el estado de una tarea de pendiente a completada.
+    *Eliminar tareas: Eliminar tareas de la lista.
+    *Persistencia de datos: Las tareas se guardan en el almacenamiento local del dispositivo.
+
+Tecnologías Utilizadas
+    Ionic Framework: Para el desarrollo de la aplicación móvil.
+    Angular: Para la lógica de la aplicación.
+    Ionic Storage: Para persistir datos en el dispositivo.
+    SCSS: Para los estilos personalizados.
+
+Requisitos
+    Node.js (v16 o superior)
+    Ionic CLI
+    Angular (Se instala automáticamente con Ionic)
+
+Instalación
+1. Clona este repositorio:
+git clone https://github.com/JosueSC25/TaskApp.git
+
+2. Instala las dependencias:
+Si no tienes Ionic y Angular instalados, instala Ionic globalmente:
+npm install -g @ionic/cli
+
+Luego instala las dependencias del proyecto:
+npm install
+
+3. Ejecuta la app en tu navegador:
+Para probar la aplicación en tu navegador local, ejecuta el siguiente comando:
+ionic serve
+

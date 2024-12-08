@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color: white;">Detalle</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button style="color: white;"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="task">
+  <ion-item>
+    <ion-label position="stacked">Título</ion-label>
+    <ion-input [value]="task.title" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Descripción</ion-label>
+    <ion-textarea [value]="task.description" readonly></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label>Estado</ion-label>
+    <ion-toggle
+      [(ngModel)]="isTaskDone"
+      (ionChange)="onStatusChange($event)"
+      [checked]="task?.status === 'Listo'"
+      color="success"
+    ></ion-toggle>
+  </ion-item>
+</ion-content>

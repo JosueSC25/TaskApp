@@ -1,0 +1,59 @@
+ion-content {
+    --background: #f5fff1;
+    padding: 20px;
+  }
+  
+  ion-header {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  ion-toolbar {
+    --background: #28a745;
+  }
+  
+  ion-title {
+    font-weight: bold;
+  }
+  
+  ion-label {
+    font-size: 16px;
+  }
+  
+  ion-textarea, ion-input {
+    --background: #f5fff1;
+    --border-radius: 8px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    margin-bottom: 15px;
+  }
+  
+  ion-toggle {
+    margin-bottom: 15px;
+    --background:#286636;
+  }
+  
+  ion-button {
+    --background: #286636;
+    --color: white;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  ion-button:hover {
+    --background: #042a0d;
+  }
+  
+/* Personalización del ion-toggle */
+ion-toggle.colortoggle {
+    --color: #042a0d; /* Color del ícono (cuando está activado) */
+    --checked-track-background: #042a0d; /* Color de la barra cuando está activado */
+    --unchecked-track-background: #e0e0e0; /* Color de la barra cuando está desactivado */
+    --border-radius: 50px; /* Para hacerlo redondeado (opcional) */
+    --handle-background: white; /* Color del círculo del toggle */
+  }
+
+  ion-toggle.colortoggle[checked] {
+    --color: #042a0d; /* Cambiar el color del ícono cuando está activado (verde) */
+    --checked-track-background: #042a0d; /* Color de la barra cuando está activado (verde) */
+  }

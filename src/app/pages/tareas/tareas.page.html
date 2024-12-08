@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color: white;">Tareas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let task of tasks; let i = index">
+      <ion-label>{{ task.title }}</ion-label>
+      <ion-badge [color]="task.status === 'Listo' ? 'success' : 'warning'">
+        {{ task.status }}
+      </ion-badge>
+      <ion-button fill="outline" color="danger" (click)="confirmDelete(i)">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+      <ion-button fill="outline" [routerLink]="['/detalle', i]">Ver</ion-button>
+    </ion-item>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="['/nueva-tarea']">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

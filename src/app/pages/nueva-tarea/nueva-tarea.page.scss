@@ -1,0 +1,45 @@
+ion-content {
+    --background: #f5fff1;
+    padding: 20px;
+  }
+  
+  ion-header {
+    background-color: #286636;
+    color: white;
+  }
+  
+  ion-toolbar {
+    --background: #286636;
+  }
+  
+  ion-title {
+    font-weight: bold;
+  }
+  
+  ion-label {
+    font-size: 16px;
+  }
+  
+  ion-input, ion-textarea {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --border-radius: 8px;
+    --background: #f5fff1;
+    margin-bottom: 15px;
+  }
+  
+  ion-button {
+    --background: #286636;
+    --color: white;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  ion-button:hover {
+    --background: #218838;
+  }
+  
+  ion-item {
+    margin-bottom: 15px;
+  }
+  
